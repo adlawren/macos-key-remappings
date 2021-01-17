@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# References:
+# - https://apple.stackexchange.com/questions/7231/how-can-i-rebind-caps-lock-to-delete-backspace/324832#324832
+# - https://www.nanoant.com/mac/macos-function-key-remapping-with-hidutil
+
+# See here for additional key codes: https://www.freebsddiary.org/APC/usb_hid_usages.php
+
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x70000002A}]}'

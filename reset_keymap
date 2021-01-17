@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+hidutil property --set '{"UserKeyMapping":[]}'
